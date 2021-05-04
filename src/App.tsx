@@ -1,23 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MyComponent from './components/MyComponent'
+import ToggleMode from './components/ToggleMode'
+import HiddenText from './components/HiddenText'
+import ReactToThis from './components/ReactToThis'
+import Settings from './components/Settings'
 
 function App() {
+  let message = 'Hello';
+  message += 'world!'
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {message}
+       <MyComponent />
+       <ToggleMode />
+       <HiddenText />
+       <ReactToThis />
+       <Settings />
       </header>
     </div>
   );
